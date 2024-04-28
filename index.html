@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 80px auto;
+            animation-name: abc;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes abc {
+            0% {
+                transform: rotateZ(0deg);
+
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 150px auto;
+            animation-name: pqr;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes pqr {
+            0% {
+                transform: rotateZ(0deg);
+
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation-name: mno;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes mno {
+            0% {
+                transform: translateX(0px)
+            }
+
+            50% {
+                background-color: pink;
+            }
+
+            100% {
+                transform: translateX(800px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+
+</body>
+
+</html>

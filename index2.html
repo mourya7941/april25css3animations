@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Bouncing Ball Animation</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .common {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            display: inline-block;
+            animation-name: abc;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+
+
+        }
+
+        .b1 {
+            background: red;
+            animation-delay: 0s;
+
+        }
+
+        .b2 {
+            background: green;
+            animation-delay: 0.1s;
+
+
+        }
+
+        .b3 {
+            background-color: blue;
+            animation-delay: 0.2s;
+
+        }
+
+        .b4 {
+            background-color: yellow;
+            animation-delay: 0.3s;
+
+        }
+
+        .b5 {
+            background-color: pink;
+            animation-delay: 0.4s;
+
+
+        }
+
+        .b6 {
+            background-color: silver;
+            animation-delay: 0.5s;
+
+        }
+
+        .b7 {
+            background-color: chocolate;
+            animation-delay: 0.6s;
+
+        }
+
+        @keyframes abc {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(500px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="common b1"></div>
+    <div class="common b2"></div>
+    <div class="common b3"></div>
+    <div class="common b4"></div>
+    <div class="common b5"></div>
+    <div class="common b6"></div>
+    <div class="common b7"></div>
+
+
+
+</body>
+
+</html>
